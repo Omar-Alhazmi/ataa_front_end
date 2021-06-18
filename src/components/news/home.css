@@ -15,8 +15,31 @@ header {
   background: #000000;
   z-index: 10;
 }
+.highestContainer{
+  height:  fit-content;
+  background-color: #112d4e;
+}
+.PaginationContainer{
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 10px 0;
+}
+/* .Pagination{
+  background-color: #FFFFFF;
+  border: black solid 1px;
 
-
+} */
+.Pagination ul{
+  background-color: #FFFFFF;
+  border: black solid 1px;
+}
+.Pagination a:hover{
+  background-color: cadetblue;
+}
+.Pagination a{
+  border: black 0.5px;
+  border-style: none solid none solid;
+}
 @media (max-width: 1515px) {
   header section {
     max-width: 100%;
@@ -32,9 +55,7 @@ header section a {
   padding: 3px 0;
 }
 
-* {
-  outline: none;
-}
+
 
 .readMore {
   -webkit-appearance: none;
@@ -209,13 +230,15 @@ header section a {
 
 @media (max-height: 500px) {
   .slider-wrapper, .slide {
-    height: calc(100vh - 75px);
+    height: 860px;
+     /* height: calc(100vh - 75px); */
   }    
 }
 
 @media (max-width: 640px) {
   .slider-wrapper, .slide {
-    height: calc(80vh - 75px);
+    height: 860px;
+   /* height: calc(80vh - 75px); */
   }    
 }
 

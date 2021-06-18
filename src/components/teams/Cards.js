@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const CardsContainer = styled.div`
 
-height: 860px;
+height:  fit-content;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -10,10 +10,12 @@ align-items: center;
 background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#112d4e')};
 
 @media screen and (max-width: 760px) {
-    height: 1100px;
+    height: calc(226vh + 65px);
+    /* height: 1100px; */
 }
 @media screen and (max-width: 480px) {
-    height: 1300px;
+    height: calc(226vh + 65px);
+    /* height: 1300px; */
 }
 `;
 export const CardsWrapper = styled.div `
@@ -35,7 +37,7 @@ padding:0 50px;
 }
 `;
 export const single_card = styled.div`
-background: #DBE2EF;
+background: #ffffff;
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
